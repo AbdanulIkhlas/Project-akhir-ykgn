@@ -1,0 +1,360 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* * Clear fix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* width */
+body::-webkit-scrollbar {
+width: 7px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+background: white; 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+background: rgb(155, 155, 155); 
+}
+
+/* ! ------------------ My CSS ----------------------- */
+/* ? ------------------ Header ------------------------*/
+header{
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #780d2d;
+}
+
+body{
+    font-family: "Titillium Web";
+    font-weight: bold;
+    background-color: #8a1538;
+}
+
+
+.navbar-menu .logo a img{
+    width: 130px;
+    margin-top: -9px;
+}
+
+.logo{
+    float: left;
+}
+
+.navbar-menu{
+    height: 70px;
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.navbar-menu .menu {
+    float: right;
+    margin: 25px 2px;
+    box-sizing: border-box;
+}
+
+.navbar-menu .menu a {
+    color: white;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+.navbar-menu .menu a:hover{
+    font-size: large;
+    background-color: #8b4a5dc7;
+    border-radius:10px;
+}
+
+.navbar-menu .menu a:nth-child(2){
+    border: 2px solid white;
+    background-color: #8b4a5dce;
+    color: white;
+    font-size: 19px;
+    padding: 1px 8px;
+    border-radius: 10px;
+}
+
+.navbar-menu .menu a:nth-child(4),
+.navbar-menu .menu a:nth-child(6){
+    padding: 0;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+.menu .hover-akun{
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.menu p{
+    position: relative;
+    float: right;
+    margin-right:105px;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 4px 7px;
+    background-color: #8b4a5dc7;
+    color: white;
+    display: none;
+}
+
+.navbar-menu .menu a:nth-child(5):hover ~ .hover-akun p{
+    display: block;
+}
+
+/* ? --------------------------------------------------- */
+
+/* ? -------------------- Section ---------------------- */
+section {
+    margin: 70px auto;
+    width: 80%;
+}
+
+section .content{
+    text-align: center;
+    border: 1px solid transparent;
+    margin-top: 90px; /* - 70px*/
+    color: white;
+}
+
+section h1{
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+
+.kotak{
+    margin-top: 30px;
+    background-color: #780d2d;
+    width: 670px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 40px 20px;
+    color: white;
+    text-align: left;
+}
+
+.kotak .row div{
+    font-size: 17px;
+}
+
+.kotak .row .isi-kotak{
+    width: 100%;
+    border-bottom: 2px solid white;
+    letter-spacing: 1px;
+}
+
+.kotak .row .pertandingan{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pertandingan .bendera img{
+    border: 1px solid white;
+    width: 70px;
+}
+
+.pertandingan .bendera p{
+    font-size: 10px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.pertandingan .vs{
+    font-size: 20px;
+    color: white;
+    margin: 10px 15px;
+}
+
+.kotak .row .label{
+    padding-top: 13px;
+}
+
+.button-join{
+    border: 1px solid white;
+    padding: 7px 20px;
+    margin-right: 10px;
+    color: black;
+    border-radius: 3px;
+    box-shadow: 4px 6px black;
+    background-color: #a0ffb3;
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.button-join:hover{
+    background-color: #a0ffb3;
+}
+
+.button-join:active{
+    background-color: #a0ffb3;
+    box-shadow: 2px 3px black;
+    transform: translateY(4px);
+}
+
+.button-back{
+    border: 1px solid white;
+    padding: 7px 16px;
+    margin-right: 10px;
+    color: black;
+    border-radius: 3px;
+    box-shadow: 4px 6px black;
+    background-color: #fffba0;
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.button-back:hover{
+    background-color: #fffba0;
+}
+
+.button-back:active{
+    background-color: #fffba0;
+    box-shadow: 2px 3px black;
+    transform: translateY(4px);
+}
+
+
+/* ? --------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+/* ? --------------------- Footer ----------------------- */
+footer{
+    height: 40px;
+    width: 100%;
+    background-color: #780d2d;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-main{
+    height: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-main p{
+    color: white;
+    padding: 10px 0;
+    box-sizing: border-box
+}
+
+.footer-main p .copy-icon{
+    font-size: 15px;
+}
+
+.copyright{
+    float: left;
+}
+
+.footer-main .lokasi-terkini{
+    margin: 8px 2px;
+    box-sizing: border-box;
+    float: right;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+
+.footer-main .lokasi-terkini p{
+    padding: 0;
+    font-size: 13px;
+    color: white;
+}
+
+
+
+
+/* ? ---------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+

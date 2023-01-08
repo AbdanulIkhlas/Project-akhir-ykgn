@@ -1,0 +1,375 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* * Clear fix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* width */
+body::-webkit-scrollbar {
+width: 7px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+background: white; 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+background: rgb(155, 155, 155); 
+}
+
+/* ! ------------------ My CSS ----------------------- */
+/* ? ------------------ Header ------------------------*/
+header{
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #780d2d;
+}
+
+body{
+    font-family: "Titillium Web";
+    font-weight: bold;
+    background-color: #8a1538;
+}
+
+
+.navbar-menu .logo a img{
+    width: 130px;
+    margin-top: -9px;
+}
+
+.logo{
+    float: left;
+}
+
+.navbar-menu{
+    height: 70px;
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.navbar-menu .menu {
+    float: right;
+    margin: 25px 2px;
+    box-sizing: border-box;
+}
+
+.navbar-menu .menu a {
+    color: white;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+.navbar-menu .menu a:hover{
+    font-size: large;
+    background-color: #8b4a5dc7;
+    border-radius:10px;
+}
+
+.navbar-menu .menu a:nth-child(3){
+    border: 2px solid white;
+    background-color: #8b4a5dce;
+    color: white;
+    font-size: 19px;
+    padding: 1px 8px;
+    border-radius: 10px;
+}
+
+.navbar-menu .menu a:nth-child(4),
+.navbar-menu .menu a:nth-child(6){
+    padding: 0;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+.menu .hover-akun{
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.menu p{
+    position: relative;
+    float: right;
+    margin-right:105px;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 4px 7px;
+    background-color: #8b4a5dc7;
+    color: white;
+    display: none;
+}
+
+.navbar-menu .menu a:nth-child(5):hover ~ .hover-akun p{
+    display: block;
+}
+
+/* ? --------------------------------------------------- */
+
+/* ? -------------------- Section ---------------------- */
+section {
+    margin: 70px auto;
+    width: 80%;
+    border: 1px solid transparent;
+}
+
+section .content{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+section h1{
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+
+.kotak{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #780d2d;
+    width: 920px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.container-fluid .row div{
+    border: 1px solid transparent;
+    padding: 0;
+    text-align: left;
+}
+
+.container-fluid .row div:nth-child(2){
+    /* ! CSS : */
+    padding-top: 4px;
+    padding-left: 30px;
+    font-size: 19px;
+}
+
+.container-fluid .row .form-select{
+    /* ! CSS SELECT TIM */
+    text-align: center;
+    color: #780d2d;
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container-fluid .row div:nth-child(1) {
+    /* ! CSS PILIH TIM */
+    font-size: 19px;
+    padding-top: 7px;
+}
+
+.container-fluid .row:nth-child(2) div:nth-child(1) {
+    /* ! CSS PILIH TIM */
+    padding-top: 0px;
+}
+
+.container-fluid .row:nth-child(1) div:nth-child(4) {
+    /* ! CSS VS */
+    text-align: center;
+    font-size: 26px;
+    padding-top: 2px;
+}
+
+.container-fluid .row .input-group input[type="time"]{
+    /* ! CSS TIME */
+    width: 323.5px;
+    text-align: center;
+    color: #780d2d;
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container-fluid .row .input-group input[type="date"]{
+    /* ! CSS DATE */
+    width: 327px;
+    text-align: center;
+    color: #780d2d;
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container-fluid .row input[type="text"]{
+    /* ! CSS INPUT TEXT */
+    text-align: center;
+    color: #780d2d;
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container-fluid .row input[type="text"]::placeholder{
+    /* ! CSS INPUT TEXT */
+    text-align: center;
+    color: #684d55;
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.container-fluid .submit{
+    border: 1px solid white;
+    padding: 7px;
+    width: 95%;
+    color: white;
+    background-color: #3c861b;
+    font-weight: bold;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float: right;
+    box-shadow: 2px 3px black;
+}
+
+.container-fluid .submit:hover{
+    background-color: #51ff71a3;
+}
+
+.container-fluid .submit:active{
+    background-color: #51ff71a3;
+    box-shadow: 1px 2px black;
+    transform: translateY(4px);
+}
+
+/* ? --------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+/* ? --------------------- Footer ----------------------- */
+footer{
+    height: 40px;
+    width: 100%;
+    background-color: #780d2d;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-main{
+    height: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-main p{
+    color: white;
+    padding: 10px 0;
+    box-sizing: border-box
+}
+
+.footer-main p .copy-icon{
+    font-size: 15px;
+}
+
+.copyright{
+    float: left;
+}
+
+.footer-main .lokasi-terkini{
+    margin: 8px 2px;
+    box-sizing: border-box;
+    float: right;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+
+.footer-main .lokasi-terkini p{
+    padding: 0;
+    font-size: 13px;
+    color: white;
+}
+
+
+/* ? ---------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+

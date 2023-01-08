@@ -1,0 +1,481 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* * Clear fix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* width */
+body::-webkit-scrollbar {
+width: 7px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+background: white; 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+background: rgb(155, 155, 155); 
+}
+
+/* ! ------------------ My CSS ----------------------- */
+/* ? ------------------ Header ------------------------*/
+header{
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #780d2d;
+}
+
+body{
+    font-family: "Titillium Web";
+    font-weight: bold;
+    background-color: #8a1538;
+}
+
+
+.navbar-menu .logo a img{
+    width: 130px;
+    margin-top: -9px;
+}
+
+.logo{
+    float: left;
+}
+
+.navbar-menu{
+    height: 70px;
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.navbar-menu .menu {
+    float: right;
+    margin: 25px 2px;
+    box-sizing: border-box;
+}
+
+.navbar-menu .menu a {
+    color: white;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+.navbar-menu .menu a:hover{
+    font-size: large;
+    background-color: #8b4a5dc7;
+    border-radius:10px;
+}
+
+.navbar-menu .menu a:nth-child(2){
+    border: 2px solid white;
+    background-color: #8b4a5dce;
+    color: white;
+    font-size: 19px;
+    padding: 1px 8px;
+    border-radius: 10px;
+}
+
+.navbar-menu .menu a:nth-child(4),
+.navbar-menu .menu a:nth-child(6){
+    padding: 0;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* ? --------------------------------------------------- */
+
+/* ? -------------------- Section ---------------------- */
+section {
+    margin: 70px auto;
+    width: 80%;
+}
+
+section .content{
+    text-align: center;
+    border: 1px solid transparent;
+    margin-top: 90px; /* - 70px*/
+    color: white;
+}
+
+section h1{
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+
+.kotak-body{
+    background-color: #780d2d;
+    width: 920px;
+    height: 290px;
+    border: 1px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 0;
+    color: white;
+    overflow: auto;
+}
+
+.kotak-body::-webkit-scrollbar {
+    width: 0.1px;
+}
+.kotak-body::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.kotak-body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.kotak-judul{
+    background-color: #780d2d;
+    width: 920px;
+    height: 35px;
+    border: 1px solid white;
+    border-bottom: 2px solid white;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .kotak-body table {
+    color: white;
+}
+
+.content .kotak-judul a {
+    color: white;
+    padding: 0;
+    pointer-events: none;
+    cursor: default;
+    font-size: 16px;
+}
+
+.content .kotak-judul .judul{
+    margin-top: 9px;
+    text-align: left;
+}
+
+.content .kotak-judul a:nth-child(1){
+    margin-left: 65px;
+}
+
+.content .kotak-judul a:nth-child(2){
+    margin-left: 93px;
+}
+
+.content .kotak-judul a:nth-child(3){
+    margin-left: 110px;
+}
+
+.content .kotak-judul a:nth-child(4){
+    margin-left: 107px;
+}
+
+.content .kotak-judul a:nth-child(5){
+    margin-left: 73px;
+}
+
+.content .kotak-judul a:nth-child(6){
+    margin-left: 53px;
+}
+
+.berlangsung{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.berlangsung .bendera img{
+    border: 1px solid white;
+    width: 70px;
+}
+
+.berlangsung .bendera p{
+    font-size: 10px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.berlangsung .vs{
+    font-size: 20px;
+    color: white;
+    margin: 10px 15px;
+}
+
+.lokasi{
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid white;
+    background-color: #3c861c;
+    border-radius: 4px;
+    box-shadow: 2px 3px black;
+}
+
+.lokasi:hover{
+    background-color: #51ff71a3;
+}
+
+.lokasi:active{
+    background-color: #51ff71a3;
+    box-shadow: 1px 2px black;
+    transform: translateY(4px);
+}
+
+.lokasi p{
+    color: white;
+    margin-top: 6px;
+    letter-spacing: 1px;
+}
+
+.lokasi p span svg{
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    margin-top: -4px;
+}
+
+.harga{
+    width: 90px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    font-size: 15px;
+}
+
+.tempat{
+    width: 180px;
+    box-sizing: border-box;
+}
+
+.tanggal{
+    width: 110px;
+    box-sizing: border-box;
+}
+
+.status{
+    width: 84%;
+    height: 30px;
+    box-shadow: 2px 3px black;
+}
+
+.status .centering{
+    display: flex;
+    justify-content: center;
+}
+
+.status-segera{
+    width: 100px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: #3c861c;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.status-segera p{
+    margin-top: 6px;
+    letter-spacing: 3px;
+}
+
+.status-selesai{
+    width: 100px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: #e21111;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.status-selesai p{
+    margin-top: 6px;
+    letter-spacing: 3px;
+}
+
+
+.status-batal{
+    width: 107px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: #e21111;
+    border-radius: 4px;
+    height: 30px;
+    padding: 2px;
+}
+
+.status-batal p{
+    margin-top: 6px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.provinsi{
+    margin-top: 14px;
+    padding-top: 3px;
+    width: 920px;
+    line-height: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: left;
+}
+
+.kotak-provinsi{
+    width: 300px;
+}
+
+.input-group-text{
+    background-color: #600621;
+    color: white;
+    border-bottom-left-radius: 0;
+    font-family: "Titillium Web";
+    font-weight: bold;
+}
+
+.form-select{
+    font-family: "Titillium Web";
+    font-weight: bold;
+    background-color: #780d2d;
+    color: white;
+    width: 200px;
+    border-bottom-right-radius: 0;
+}
+
+.table-hover{
+    color: whitesmoke;
+}
+
+#productSizes tr:hover{
+    background-color: rgba(0, 0, 0, 0.173);
+    color: white;
+}
+
+/* ? --------------------------------------------------- */
+
+
+
+
+/* ? --------------------- Footer ----------------------- */
+footer{
+    height: 40px;
+    width: 100%;
+    background-color: #780d2d;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-main{
+    height: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-main p{
+    color: white;
+    padding: 10px 0;
+    box-sizing: border-box
+}
+
+.footer-main p .copy-icon{
+    font-size: 15px;
+}
+
+.copyright{
+    float: left;
+}
+
+.footer-main .lokasi-terkini{
+    margin: 8px 2px;
+    box-sizing: border-box;
+    float: right;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+
+.footer-main .lokasi-terkini p{
+    padding: 0;
+    font-size: 13px;
+    color: white;
+}
+
+/* ? ---------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
